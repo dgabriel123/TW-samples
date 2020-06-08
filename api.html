@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Intro to JSON and YAML</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/REPLACE.ico" type="image/x-icon">
+    <link rel="icon" href="images/REPLACE.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="documentation.css">
+  </head>
+  <body>
+    <main>
+
+      <h1>Introduction to JSON</h1>
+
+      <p>JSON, short for <em>JavaScript Object Notation</em>, is a commonly used format for storing and moving information. It is both human-readable and easily parsed by computers, making it a natural fit for the world of APIs.</p>
+
+      <p>If you already have a working knowledge of JavaScript, JSON will be familiar territory, and you may <a href="#yaml" target="_blank">skip this section.</a> If you are new to JavaScript, consider the following example:</p>
+
+      <pre>
+        <code>
+
+        </code>
+      </pre>
+
+      <p>All JSON objects are nested inside a set of curly brackets.  From this example, we can surmise the following:</p>
+
+      <ul>
+        <li>This example contains one object, titled <code class="yellow">songs</code></li>
+        <li><code class="yellow">songs</code> contains 3 <em>key-value</em> pairs, which include the song name and the original recording artist</li>
+      </ul>
+
+      <p>Key-value pairs are the drivers for JSON’s data architecture. In fact, <code class="yellow">songs</code>  is the first key-value pair in this example. In JSON, the value is allowed to be 6 types of values: a string, a digit, a boolean, an array, a nested object, or null.</p>
+
+      <table>
+        <tr>
+          <td>String</td>
+          <td><code>"This is a string", "This is also a string"</code></td>
+        </tr>
+        <tr>
+          <td>Digit</td>
+          <td><code>2, 68, 456</code></td>
+        </tr>
+        <tr>
+          <td>Boolean</td>
+          <td><code>True, False</code></td>
+        </tr>
+        <tr>
+          <td>Array</td>
+          <td><code>["String string", 44, False]</code></td>
+        </tr>
+        <tr>
+          <td>Nested Object</td>
+          <td><code>{"Nested object": "You can nest as many objects as you like"}</code></td>
+        </tr>
+        <tr>
+          <td>Null</td>
+          <td><code>Null</code></td>
+        </tr>
+      </table>
+
+
+      <p>A JSON object can contain any and every single one of these elements. The key must be a string, but the value can be any of the 5 elements. Let’s look at a more complex example of a JSON object:</p>
+
+      <p>This JSON example shows the data for the object <code class="yellow">songs</code> and contains 6 key-value pairs:</p>
+
+      <ul>
+        <li><code class="yellow">style</code>, <code class="yellow">strings</code>, <code class="yellow">bridge</code>, and <code class="yellow">body</code> are arrays (arrays are JavaScript’s lists, and are marked by straight brackets</li>
+        <li><code class="yellow">cymbal</code> is a boolean and is set to <code class="purple">False</code></li>
+        <li><code class="yellow">tunings</code> contains a nested object with 3 key-value pairs of its own: <code class="yellow">6 string</code>, <code class="yellow">7 string</code>, and <code class="yellow">8 string</code></li>
+      </ul>
+
+      <p>Objects are often nested to allow for greater depth of data.</p>
+
+      <h1 id="yaml">Introduction to YAML</h1>.
+
+      <p>YAML stands for <em>YAML Ain’t Markup Language</em>. It is even easier to read than JSON, and is the preferred language when working within the OpenAPI spec (particularly when using <a href="https://editor.swagger.io/" target="_blank">Swagger</a>).</p>
+
+      <p>JSON and YAML are used interchangeably, and can be easily converted back and forth with readily available online tools, such as <a href="https://codebeautify.org/json-to-yaml" target="_blank">JSON to YAML Converter byBeautify</a>. In this section, I will provide concurrent samples in both languages.</p>
+
+
+
+      <p>Let’s revisit the JSON in the previous example:</p>
+
+      <p>Here is what it would look like when converted to YAML:</p>
+
+      <p>The syntax is not too dissimilar to JSON, and requires only a brief analysis to understand:</p>
+
+      <ul>
+        <li>In YAML quotes are optional. By default, <code class="red">"element"</code> in JSON looks like <code class="red">element</code> in YAML. There are exceptions when quotes are necessary, such as if you wish to turn a digit into a string value or if you use special characters.</li>
+        <li>YAML is space-sensitive and depends on line breaks to indicate object structure (known as block format). Required indentation is 1 or more spaces (tabs are not allowed in YAML). In this example, the value of guitar is an object containing 6 key/value pairs: <code class="red">style</code>, <code class="red">string</code>, <code class="red">bridge</code>, <code class="red">body</code>, <code class="red">cymbal</code>, and <code class="red">tunings</code>.</li>
+        <li>You may also use inline format to save space. Inline format looks almost identical to JSON, minus the required quotes. For example: Line 3-5 can be represented as<br /><code class="red">style: [acoustic, electric]</code></li>
+        <li>Dashes represent list items, also  known as arrays. Objects and arrays are frequently nested in each other.</li>
+      </ul>
+
+      <h1>More YAML Tricks</h1>
+
+      <h2>Comments</h2>
+
+      <p>YAML comments begin with # tags.</p>
+
+      <h2>Anchors</h2>
+
+      <p>YAML anchors are similar to variables in programming. When you set a value to a key, you may anchor it as well. That allows you to use that value elsewhere in the document.</p>
+
+      <p>The id number is long and difficult to remember. When you prepend the value of id with &anchor, you may reference it later in the document as such:</p>
+
+      <p>The asterisk marks the reference to Line 26 where the anchor was first defined.</p>
+
+      <h2>References</h2>
+
+      <p>The final important YAML element to learn for OpenAPI is $ref. $ref is used to reference files outside the current YAML file.</p>
+
+      <p>The filepath of the file can be local, remote, or a URL.</p>
+
+      <p>Note: There is a limitation to where you are allowed to insert $ref in your OpenAPI project. More on this later.</p>
+
+    </main>
+  </body>
+</html>
