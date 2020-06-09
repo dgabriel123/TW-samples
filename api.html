@@ -21,8 +21,13 @@
 
       <pre>
         <code>
-
-        </code>
+  {
+   <span class="yellow">songs"</span>: {
+    <span class="yellow">"Kashmir"</span>: <span class="yellow">"Led Zeppelin"</span>,
+    <span class="yellow">"Taxman"</span>: <span class="yellow">"The Beatles"</span>,
+    <span class="yellow">"Satisfaction"</span>: <span class="yellow">"The Rolling Stones"</span>
+   }
+  }</code>
       </pre>
 
       <p>All JSON objects are nested inside a set of curly brackets.  From this example, we can surmise the following:</p>
@@ -64,6 +69,24 @@
 
       <p>A JSON object can contain any and every single one of these elements. The key must be a string, but the value can be any of the 5 elements. Let’s look at a more complex example of a JSON object:</p>
 
+      <pre>
+        <code>
+{
+   <span class="yellow">guitar"</span>: {
+      <span class="yellow">"style"</span>: [<span class="yellow">"acoustic"</span>, <span class="yellow">"electric"</span>],
+      <span class="yellow">"strings"</span>: [<span class="purple">6</span>, <span class="purple">7</span>, <span class="purple">8</span>],
+      <span class="yellow">"bridge"</span>: [<span class="yellow">"fixed"</span>, <span class="yellow">"tremolo"</span>],
+      <span class="yellow">"body"</span>: [<span class="yellow">"hollow"</span>, <span class="yellow">"semi-hollow"</span>, <span class="yellow">"solid"</span>],
+      <span class="yellow">"cymbal"</span>: <span class="purple">False</span>,
+      <span class="yellow">"tunings"</span>: {
+         <span class="yellow">"6 string"</span>: <span class="yellow">"EBGDAE"</span>,
+         <span class="yellow">"7 string"</span>: <span class="yellow">"EBGDAEB"</span>,
+         <span class="yellow">"8 string"</span>: <span class="yellow">"EBGDAEBF#"</span>
+      }
+   }
+}</code>
+      </pre>
+
       <p>This JSON example shows the data for the object <code class="yellow">songs</code> and contains 6 key-value pairs:</p>
 
       <ul>
@@ -84,7 +107,49 @@
 
       <p>Let’s revisit the JSON in the previous example:</p>
 
+      <pre>
+        <code>
+{
+   <span class="yellow">guitar"</span>: {
+      <span class="yellow">"style"</span>: [<span class="yellow">"acoustic"</span>, <span class="yellow">"electric"</span>],
+      <span class="yellow">"strings"</span>: [<span class="purple">6</span>, <span class="purple">7</span>, <span class="purple">8</span>],
+      <span class="yellow">"bridge"</span>: [<span class="yellow">"fixed"</span>, <span class="yellow">"tremolo"</span>],
+      <span class="yellow">"body"</span>: [<span class="yellow">"hollow"</span>, <span class="yellow">"semi-hollow"</span>, <span class="yellow">"solid"</span>],
+      <span class="yellow">"cymbal"</span>: <span class="purple">False</span>,
+      <span class="yellow">"tunings"</span>: {
+         <span class="yellow">"6 string"</span>: <span class="yellow">"EBGDAE"</span>,
+         <span class="yellow">"7 string"</span>: <span class="yellow">"EBGDAEB"</span>,
+         <span class="yellow">"8 string"</span>: <span class="yellow">"EBGDAEBF#"</span>
+      }
+   }
+}</code>
+      </pre>
+
       <p>Here is what it would look like when converted to YAML:</p>
+
+      <pre>
+        <code>
+<span class="red">guitar</span>:
+  <span class="red">style</span>:
+    - <span class="yellow">acoustic</span>
+    - <span class="yellow">electric</span>
+  <span class="red">strings</span>:
+    - <span class="purple">6</span>
+    - <span class="purple">7</span>
+    - <span class="purple">8</span>
+  <span class="red">bridge</span>:
+    - <span class="yellow">fixed</span>
+    - <span class="yellow">tremolo</span>
+  <span class="red">body</span>:
+    - <span class="yellow">hollow</span>
+    - <span class="yellow">semi-hollow</span>
+    - <span class="yellow">solid</span>
+  <span class="red">cymbal</span>: <span class="purple">False</span>
+  <span class="red">tunings</span>:
+    <span class="red">6 string</span>: <span class="yellow">EBGDAE</span>
+    <span class="red">7 string</span>: <span class="yellow">EBGDAEB</span>
+    <span class="red">8 string</span>: <span class="yellow">EBGDAEF#</span></code>
+      </pre>
 
       <p>The syntax is not too dissimilar to JSON, and requires only a brief analysis to understand:</p>
 
@@ -101,17 +166,40 @@
 
       <p>YAML comments begin with # tags.</p>
 
+      <pre>
+        <code>
+# Insert comment here</code>
+      </pre>
+
       <h2>Anchors</h2>
 
       <p>YAML anchors are similar to variables in programming. When you set a value to a key, you may anchor it as well. That allows you to use that value elsewhere in the document.</p>
 
+      <pre>
+        <code>
+  <span class="red">user</span>:
+    <span class="red">name</span>: <span class="yellow">Prince Harry</span>
+    <span class="red">id</span>: <span class="red">&</span><span class="green">id_harry</span> <span class="purple">5466784563474</span></code>
+      </pre>
+
       <p>The id number is long and difficult to remember. When you prepend the value of id with &anchor, you may reference it later in the document as such:</p>
+
+      <pre>
+        <code>
+  <span class="red">Harry</span>:
+    <span class="red">id</span>: <span class="red">*</span>id_harry</code>
+      </pre>
 
       <p>The asterisk marks the reference to Line 26 where the anchor was first defined.</p>
 
       <h2>References</h2>
 
       <p>The final important YAML element to learn for OpenAPI is $ref. $ref is used to reference files outside the current YAML file.</p>
+
+      <pre>
+        <code>
+<span class="red">$ref</span>: <span class="yellow">"#/assets/images/Harry.jpg"</span></code>
+      </pre>
 
       <p>The filepath of the file can be local, remote, or a URL.</p>
 
