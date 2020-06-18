@@ -1,7 +1,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    background: #ddd;
+    background: #444;
 }
 
 * {
@@ -10,7 +10,7 @@ body {
 
 main {
     background: #1e1f1b;
-    width: 801px;
+    width: 701px;
     margin: 0 auto;
     padding: 0 60px 40px 60px;
 }
@@ -18,8 +18,12 @@ main {
 p, ul {
     color: #ddd;
     padding-top: 30px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
+}
+
+em {
+    font-style: italic;
 }
 
 pre {
@@ -36,7 +40,7 @@ pre {
 pre code {
     color: #ddd;
     padding-top: 30px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.4;
 }
 
@@ -59,15 +63,15 @@ li {
 
 h1 {
     color: #e4d75f;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: bold;
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 20px;
 }
 
 h2 {
     color: #b075f9;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     padding-top: 40px;
 }
@@ -75,6 +79,7 @@ h2 {
 table {
     color: #ddd;
     margin-top: 40px;
+    font-size: 16px;
     line-height: 1.6;
 }
 
@@ -83,11 +88,15 @@ table td {
     padding: 10px;
 }
 
-.codepen {
-
-}
-
 /* Style classes */
+
+code,
+.yellow,
+.purple,
+.red,
+.green {
+    font-family: monospace;
+}
 
 .yellow {
     color: #e4d75f;
@@ -101,16 +110,20 @@ table td {
 .green {
     color: #63b72b;
 }
-code {
-    font-family: "Courier New", Courier, monospace;
+
+.nav {
+    padding-top: 20px;
+}
+
+.spacer {
+    padding-top: 80px;
 }
 
 
-
-
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 700px) {
     main {
         width: 100%;
+        padding: 0 40px 40px 40px;
     }
 }
 
@@ -118,13 +131,30 @@ code {
 @media only screen and (max-width: 400px) {
     main {
         width: 100%;
+        padding: 0 20px 40px 20px;
     }
-    h1,
-    h2,
+
     p,
     ul,
-    table {
-        padding-left: 10px;
-        padding-right: 10px;
+    pre code {
+        color: #ddd;
+        padding-top: 30px;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    h1 {
+        color: #e4d75f;
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    h2 {
+        color: #b075f9;
+        font-size: 16px;
+        font-weight: bold;
+        padding-top: 40px;
     }
 }

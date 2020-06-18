@@ -4,8 +4,8 @@
     <title>Intro to JSON and YAML</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/REPLACE.ico" type="image/x-icon">
-    <link rel="icon" href="images/REPLACE.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="documentation.css">
@@ -13,16 +13,20 @@
   <body>
     <main>
 
-      <h1>Introduction to JSON</h1>
+      <div class="nav"><a href="../index">&laquo; Back to my portfolio</a></div>
 
-      <p>JSON, short for <em>JavaScript Object Notation</em>, is a commonly used format for storing and moving information. It is both human-readable and easily parsed by computers, making it a natural fit for the world of APIs.</p>
+      <h1 class="spacer">Introduction to JSON</h1>
 
-      <p>If you already have a working knowledge of JavaScript, JSON will be familiar territory, and you may <a href="#yaml" target="_blank">skip this section.</a> If you are new to JavaScript, consider the following example:</p>
+      <p>JSON, short for <em>JavaScript Object Notation</em>, is a commonly used format for storing and moving information. It is both human-readable and easily parsed by computers, making it a natural fit for the world of REST APIs.</p>
+
+      <p>If you already have a working knowledge of JavaScript, JSON will be familiar territory, and you may <a href="#yaml">skip this section.</a> If you are new to JavaScript, read on.</p>
+
+      <p>Consider the following example:</p>
 
       <pre>
         <code>
   {
-   <span class="yellow">songs"</span>: {
+   <span class="yellow">"songs"</span>: {
     <span class="yellow">"Kashmir"</span>: <span class="yellow">"Led Zeppelin"</span>,
     <span class="yellow">"Taxman"</span>: <span class="yellow">"The Beatles"</span>,
     <span class="yellow">"Satisfaction"</span>: <span class="yellow">"The Rolling Stones"</span>
@@ -37,32 +41,44 @@
         <li><code class="yellow">songs</code> contains 3 <em>key-value</em> pairs, which include the song name and the original recording artist</li>
       </ul>
 
-      <p>Key-value pairs are the drivers for JSON’s data architecture. In fact, <code class="yellow">songs</code>  is the first key-value pair in this example. In JSON, the value is allowed to be 6 types of values: a string, a digit, a boolean, an array, a nested object, or null.</p>
+      <p>Key-value pairs are the drivers of JSON’s data architecture. In fact, <code class="yellow">songs</code> is the first key-value pair in this example, and contains 3 pairs inside it.</p>
+
+      <p>In JSON, the value is allowed to be 6 types of values: a string, a number, a boolean, an array, a nested object, or null.</p>
 
       <table>
         <tr>
           <td>String</td>
-          <td><code>"This is a string", "This is also a string"</code></td>
+          <td><code><span class="yellow">"This is a string"</span>, <span class="yellow">"This is also a string"</span></code><br /><br />
+            A string is a combination of characters. Because JSON strings are wrapped in double quotes, double quotes inside the string need to be escaped as such: <span class="yellow">"</span><span class="purple">\"</span><span class="yellow">"</span>.<br />
+            For example:<br /><br />
+            <code><span class="yellow">"He made </span><span class="purple">\"</span><span class="yellow">air quotes</span><span class="purple">"\</span> <span class="yellow">with his fingers."</span></code>            
+          </td>
         </tr>
         <tr>
-          <td>Digit</td>
-          <td><code>2, 68, 456</code></td>
+          <td>Number</td>
+          <td><code><span class="purple">2</span>, <span class="purple">68</span>, <span class="purple">456</span></code><br /><br />
+            A number does not use quotes. If you wrap a numeric value in double quotes, it becomes a string.
+          </td>
         </tr>
         <tr>
           <td>Boolean</td>
-          <td><code>True, False</code></td>
+          <td><code><span class="purple">True</span>, <span class="purple">False</span></code><br /><br />
+          A boolean is the on/off switch of programming: it can only be True or False.</td>
         </tr>
         <tr>
           <td>Array</td>
-          <td><code>["String string", 44, False]</code></td>
+          <td><code>[<span class="yellow">"String string"</span>, <span class="purple">44</span>, <span class="purple">False</span>]</code><br /><br/>
+          An array is a list of items and is marked by straight brackets. These items can be a combination of any of the aforementioned elements, and are separated by a comma.
+        </td>
         </tr>
         <tr>
           <td>Nested Object</td>
-          <td><code>{"Nested object": "You can nest as many objects as you like"}</code></td>
+          <td><code>{<span class="yellow">"Nested object"</span>: <span class="yellow">"You can nest as many objects as you like"</span>}</code><br /><br />
+          As I previously mentioned, JSON is a series of nested objects, the root object being JSON itself. You may nest as many objects as you like.</td>
         </tr>
         <tr>
           <td>Null</td>
-          <td><code>Null</code></td>
+          <td><code><span class="purple">Null</span></code></td>
         </tr>
       </table>
 
@@ -72,7 +88,7 @@
       <pre>
         <code>
 {
-   <span class="yellow">guitar"</span>: {
+   <span class="yellow">"guitar"</span>: {
       <span class="yellow">"style"</span>: [<span class="yellow">"acoustic"</span>, <span class="yellow">"electric"</span>],
       <span class="yellow">"strings"</span>: [<span class="purple">6</span>, <span class="purple">7</span>, <span class="purple">8</span>],
       <span class="yellow">"bridge"</span>: [<span class="yellow">"fixed"</span>, <span class="yellow">"tremolo"</span>],
@@ -87,30 +103,26 @@
 }</code>
       </pre>
 
-      <p>This JSON example shows the data for the object <code class="yellow">songs</code> and contains 6 key-value pairs:</p>
+      <p>This JSON example shows the data for the object <code class="yellow">guitar</code> and contains 6 key-value pairs:</p>
 
       <ul>
-        <li><code class="yellow">style</code>, <code class="yellow">strings</code>, <code class="yellow">bridge</code>, and <code class="yellow">body</code> are arrays (arrays are JavaScript’s lists, and are marked by straight brackets</li>
-        <li><code class="yellow">cymbal</code> is a boolean and is set to <code class="purple">False</code></li>
+        <li><code class="yellow">style</code>, <code class="yellow">strings</code>, <code class="yellow">bridge</code>, and <code class="yellow">body</code> are arrays</li>
+        <li><code class="yellow">cymbal</code> is a boolean value and is set to <code class="purple">False</code></li>
         <li><code class="yellow">tunings</code> contains a nested object with 3 key-value pairs of its own: <code class="yellow">6 string</code>, <code class="yellow">7 string</code>, and <code class="yellow">8 string</code></li>
       </ul>
 
-      <p>Objects are often nested to allow for greater depth of data.</p>
+      <h1 id="yaml" class="spacer">Introduction to YAML</h1>.
 
-      <h1 id="yaml">Introduction to YAML</h1>.
-
-      <p>YAML stands for <em>YAML Ain’t Markup Language</em>. It is even easier to read than JSON, and is the preferred language when working within the OpenAPI spec (particularly when using <a href="https://editor.swagger.io/" target="_blank">Swagger</a>).</p>
+      <p>YAML stands for <em>YAML Ain’t Markup Language</em>. It is even easier to read than JSON, and is the preferred language when working within the OpenAPI spec.</p>
 
       <p>JSON and YAML are used interchangeably, and can be easily converted back and forth with readily available online tools, such as <a href="https://codebeautify.org/json-to-yaml" target="_blank">JSON to YAML Converter byBeautify</a>. In this section, I will provide concurrent samples in both languages.</p>
-
-
 
       <p>Let’s revisit the JSON in the previous example:</p>
 
       <pre>
         <code>
 {
-   <span class="yellow">guitar"</span>: {
+   <span class="yellow">"guitar"</span>: {
       <span class="yellow">"style"</span>: [<span class="yellow">"acoustic"</span>, <span class="yellow">"electric"</span>],
       <span class="yellow">"strings"</span>: [<span class="purple">6</span>, <span class="purple">7</span>, <span class="purple">8</span>],
       <span class="yellow">"bridge"</span>: [<span class="yellow">"fixed"</span>, <span class="yellow">"tremolo"</span>],
@@ -154,13 +166,14 @@
       <p>The syntax is not too dissimilar to JSON, and requires only a brief analysis to understand:</p>
 
       <ul>
-        <li>In YAML quotes are optional. By default, <code class="red">"element"</code> in JSON looks like <code class="red">element</code> in YAML. There are exceptions when quotes are necessary, such as if you wish to turn a digit into a string value or if you use special characters.</li>
-        <li>YAML is space-sensitive and depends on line breaks to indicate object structure (known as block format). Required indentation is 1 or more spaces (tabs are not allowed in YAML). In this example, the value of guitar is an object containing 6 key/value pairs: <code class="red">style</code>, <code class="red">string</code>, <code class="red">bridge</code>, <code class="red">body</code>, <code class="red">cymbal</code>, and <code class="red">tunings</code>.</li>
-        <li>You may also use inline format to save space. Inline format looks almost identical to JSON, minus the required quotes. For example: Line 3-5 can be represented as<br /><code class="red">style: [acoustic, electric]</code></li>
-        <li>Dashes represent list items, also  known as arrays. Objects and arrays are frequently nested in each other.</li>
+        <li>Quotes are optional in YAML. By default, <code class="red">"element"</code> in JSON looks like <code class="red">element</code> in YAML. There are exceptions when quotes are necessary, such as if you wish to turn a number into a string value or if you use special characters.</li>
+        <li>YAML is space-sensitive and depends on line breaks to indicate object structure (known as <em>block format</em>). Required indentation is 1 or more spaces (tabs are not allowed in YAML).<br /><br />
+          In this example, the value of guitar is an object containing 6 key/value pairs: <code class="red">style</code>, <code class="red">string</code>, <code class="red">bridge</code>, <code class="red">body</code>, <code class="red">cymbal</code>, and <code class="red">tunings</code>.</li>
+        <li>You may also use <em>inline format</em> to save vertical space. Inline format looks almost identical to JSON, minus the required quotes. For example: the <code class="red">style</code> object is represented as<br /><code class="red">style: [acoustic, electric]</code></li>
+        <li>Dashes represent list items, also  known as arrays. Just as in JSON, objects and arrays are frequently nested inside each other.</li>
       </ul>
 
-      <h1>More YAML Tricks</h1>
+      <h1 class="spacer">More YAML Tricks</h1>
 
       <h2>Comments</h2>
 
@@ -173,7 +186,7 @@
 
       <h2>Anchors</h2>
 
-      <p>YAML anchors are similar to variables in programming. When you set a value to a key, you may anchor it as well. That allows you to use that value elsewhere in the document.</p>
+      <p>YAML anchors are similar to variables in programming. When you set a value to a key, you may anchor it as well. That allows you to use that value later on in the file. Take a look at the following example, in which <code class="red">id</code> has a complicated value.</p>
 
       <pre>
         <code>
@@ -182,7 +195,7 @@
     <span class="red">id</span>: <span class="red">&</span><span class="green">id_harry</span> <span class="purple">5466784563474</span></code>
       </pre>
 
-      <p>The id number is long and difficult to remember. When you prepend the value of id with &anchor, you may reference it later in the document as such:</p>
+      <p>The value is long and difficult to remember. When you prepend the value of <code class="red">id</code> with <code class="red">&</code><code class="green">id_harry</code>, You set that value to the much more easily remembered <code class="green">id_harry</code>. You may then call upon it later in the document as such:</p>
 
       <pre>
         <code>
@@ -190,11 +203,11 @@
     <span class="red">id</span>: <span class="red">*</span>id_harry</code>
       </pre>
 
-      <p>The asterisk marks the reference to Line 26 where the anchor was first defined.</p>
+      <p>The asterisk marks the reference to the anchor that was set above.</p>
 
       <h2>References</h2>
 
-      <p>The final important YAML element to learn for OpenAPI is $ref. $ref is used to reference files outside the current YAML file.</p>
+      <p>The final important YAML element to learn for OpenAPI is <code class="red">$ref</code>. <code class="red">$ref</code> is used to reference files outside the current YAML file.</p>
 
       <pre>
         <code>
@@ -203,7 +216,9 @@
 
       <p>The filepath of the file can be local, remote, or a URL.</p>
 
-      <p>Note: There is a limitation to where you are allowed to insert $ref in your OpenAPI project. More on this later.</p>
+      <p>Note: There is a limitation to where you are allowed to insert <code class="red">$ref</code> in your OpenAPI project. More on this later.</p>
+
+      <div class="nav spacer"><a href="../index">&laquo; Back to my portfolio</a></div>
 
     </main>
   </body>
