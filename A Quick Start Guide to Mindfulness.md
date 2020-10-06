@@ -48,4 +48,4 @@ You are not your mind. Everybody's mind has unpleasant thoughts. Your job is to 
 
 ***I meditate for an hour a day! May I now stop seeing my therapist/taking my medication/going to the gym/sleeping at least 8 hours a night/abstaining from drugs and alcohol?***
 
-No. Your mindfulness practice is one tool in your toolkit of well-being. It is not inteneded to be a one-size-fits-all solution. This is especially true for new practitioners who may initially become overwhelmed by the intensity of their thoughts and feelings. No matter how much you meditate, you will always need healthy food, regular exercise, and loving relationships.
+No. Your mindfulness practice is one tool in your toolkit of well-being. It is not intended to be a one-size-fits-all solution. This is especially true for new practitioners who may initially become overwhelmed by the intensity of their thoughts and feelings. No matter how much you meditate, you will always need healthy food, regular exercise, and loving relationships.
