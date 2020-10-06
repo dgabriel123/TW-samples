@@ -38,14 +38,14 @@ As previously mentioned, there is not one right way to practice mindfulness. The
 
 ## FAQ
 
-*Isn't the point of meditation to stop thinking? My mind continues to race when I practice. I think I'm bad at meditation.*
+***Isn't the point of meditation to stop thinking? My mind continues to race when I practice. I think I'm bad at meditation.***
 
 This is one of the most common misconceptions of practicing mindfulness. The goal is not to stop your thinking, but to become a calm and gentle observer of your mind and body. Over time, you will begin to see your own mental and emotional patterns with greater clarity and understanding. However, you cannot stop your own thinking any more than you can stop your heart from beating.
 
-*I noticed that I have really awful and negative thoughts. Does this mean I'm a bad person?*
+***I noticed that I have really awful and negative thoughts. Does this mean I'm a bad person?***
 
 You are not your mind. Everybody's mind has unpleasant thoughts. Your job is to observe your thoughts, calmly and without judgment. Unless you act on your painful thoughts by causing yourself and others harm, you have nothing to worry about.
 
-*I meditate for an hour a day! May I now stop seeing my therapist/taking my medication/going to the gym/sleeping at least 8 hours a night/abstaining from drugs and alcohol?*
+***I meditate for an hour a day! May I now stop seeing my therapist/taking my medication/going to the gym/sleeping at least 8 hours a night/abstaining from drugs and alcohol?***
 
 No. Your mindfulness practice is one tool in your toolkit of well-being. It is not inteneded to be a one-size-fits-all solution. This is especially true for new practitioners who may initially become overwhelmed by the intensity of their thoughts and feelings. No matter how much you meditate, you will always need healthy food, regular exercise, and loving relationships.
