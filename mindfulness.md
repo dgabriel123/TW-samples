@@ -13,12 +13,12 @@
 
 ## Anchors
 
-Mindfulness meditation is commonly seen as a Buddhist tradition of sitting on a cushion with the eyes closed, but this is just one of the many ways to practice. Mindfulness can be practiced sitting, lying down, and even walking. **The underlying common denominator of this practice is: A consistent mental focus on a repetitive task.** I will refer to this task from now on as the `anchor`. `Anchors` include (but not limited to):
+Mindfulness meditation is commonly seen as a Buddhist tradition of sitting on a cushion with the eyes closed, but this is just one of the many ways to practice. Mindfulness can be practiced sitting, lying down, and even walking. **The underlying common denominator of this practice is: A consistent mental focus on an object.** I will refer to this object from now on as the `anchor`. `Anchors` include (but not limited to):
 
 - Your breath
 - Your feet: Used in walking meditation
-- Your hands: This is useful for manual tasks, such as washing dishes
-- Your entire body (mentally scanning your body from head to toe)
+- Your hands: Useful for manual tasks, such as washing dishes
+- Your entire body: Otherwise known as a *body scan*
 
 Mindfulness can be practiced anywhere, but it is ideally practiced in a calm and quiet setting. One of the core benefits of this practice is the calming of the nervous system, and this is best achieved in an environment with minimal distractions and stressors.
 
@@ -29,7 +29,7 @@ Whether or not you use your breath as the `anchor`, correct breathing is essenti
 Correct breathing can also be called diaphragmatic breathing, or `belly breathing`. This type of breathing is:
 
 - Slow
-- Deep, begins in the stomach
+- Deep, originating in the stomach
 - Physically relaxing
 
 You may not control your mind, but you *do* control your breath. This is where much of the power of meditation comes from.
@@ -40,9 +40,9 @@ As previously mentioned, there is not one right way to practice mindfulness. The
 
 ### Sitting Meditation
 
-1. Sit in a comfortable and upright position. You may sit on a mat or a regular chair, but it is important to sit with your back straightened (do not slouch).
-2. Shift your attention to your breathing. Watch your breath go in and out. Take note of how you are breathing. Is it deep or shallow? Are you breathing from your stomach, or you chest?
-3. Begin to slowly and deliberately deepen your breath. Shift from chest breathing to `belly breathing`. Continue to focus on your in-breath and out-breath.
+1. Sit in a comfortable and upright position. You may sit on a mat or a regular chair, but it is important to sit with your back straightened. Do not slouch.
+2. Shift your attention to your breathing. Watch your breath go in and out. Take note of how you are breathing. Is it deep or shallow? Are you breathing from your stomach, or from you chest?
+3. Begin to slowly and deliberately deepen your breath. Shift from `chest breathing` to `belly breathing`. Continue to focus on your in-breath and out-breath.
 4. Continue for 10-15 minutes. If your focus shifts away from your breathing (and it will), gently return your attention to your breath.
 
 ### Walking meditation
@@ -51,8 +51,8 @@ As previously mentioned, there is not one right way to practice mindfulness. The
 
 1. Stand upright. You may hold your hands clasped in front of you if you find this comfortable.
 2. Begin walking slowly and deliberately. Focus on the movement of your legs and feet.
-3. Bring your attention to your breath as well. Gradually, shift from chest breathing to `belly breathing`.
-4. Continue for 10-15 minutes. If your focus shifts away from your walking (and it will), gently return your attention to your steps.
+3. Bring your attention to your breath as well. Gradually, shift from chest breathing to `belly breathing` as you continue to focus on your steps.
+4. Continue for 10-15 minutes. If your focus shifts away from your walking (and it will), gently return your attention to your walking.
 
 ## FAQ
 
