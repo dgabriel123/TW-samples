@@ -24,7 +24,7 @@ Mindfulness can be practiced anywhere, but it is ideally practiced in a calm and
 
 ## Breathing
 
-Whether or not you use your breath as the `anchor`, correct breathing is essential to an effective meditation practice. Without conscious awareness the breath often becomes shallow and quick. This type of breathing is called `chest breathing` and it reinforces anxiety and stress.
+Whether or not you use your breath as the `anchor`, correct breathing is essential to an effective meditation practice. Without conscious awareness the breath often becomes shallow and quick. This type of breathing is called `chest breathing` and it physiologically reinforces anxiety and stress.
 
 Correct breathing can also be called diaphragmatic breathing, or `belly breathing`. This type of breathing is:
 
