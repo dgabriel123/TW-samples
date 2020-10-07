@@ -13,12 +13,12 @@
 
 ## Anchors
 
-Mindfulness meditation is commonly seen as a Buddhist tradition of sitting on a cushion with the eyes closed, but this is just one of the many ways to practice. Mindfulness can be practiced sitting, lying down, and even walking. **The underlying common denominator of this practice is: A consistent mental focus on an object.** I will refer to this object from now on as the `anchor`. `Anchors` include (but not limited to):
+Mindfulness meditation is commonly seen as a Buddhist tradition of sitting on a cushion with the eyes closed, but this is just one of the many ways to practice. Mindfulness can be practiced sitting, lying down, and even walking. **The underlying common denominator of this practice is: a consistent mental focus on an object.** I will refer to this object from now on as the `anchor`. `Anchors` include (but are not limited to):
 
 - Your breath
-- Your feet: Used in walking meditation
-- Your hands: Useful for manual tasks, such as washing dishes
-- Your entire body: Otherwise known as a *body scan*
+- Your feet, used in walking meditation
+- Your hands, useful for manual tasks, such as washing dishes
+- Your entire body, otherwise known as a *body scan*
 
 Mindfulness can be practiced anywhere, but it is ideally practiced in a calm and quiet setting. One of the core benefits of this practice is the calming of the nervous system, and this is best achieved in an environment with minimal distractions and stressors.
 
